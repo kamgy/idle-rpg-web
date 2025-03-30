@@ -1,0 +1,15 @@
+/* LoginPage.css */
+
+/* Remove default main padding for this page (override global if needed) */
+main {
+    padding: 0;
+  }
+  
+  /* Centered container for the login form with equal horizontal padding */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Ensures equal left/right spacing */
+    box-sizing: border-box;
+  }

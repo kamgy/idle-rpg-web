@@ -1,0 +1,214 @@
+/* Reset margins and paddings */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Base Styles */
+body {
+  font-family: "Roboto", Arial, sans-serif; /* Clean, readable font */
+  background-color: #121212; /* Immersive dark mode */
+  color: #e0e0e0; /* Light text for contrast */
+  box-sizing: border-box;
+}
+
+/* Wrapper to hold page content and allow vertical scrolling */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header, Main, Footer Layout */
+header,
+main,
+footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  background: #1e1e1e;
+}
+
+footer {
+  background: #1e1e1e;
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  color: #f4d47c;
+  margin: 2rem 0 1rem;
+  font-family: "Merriweather", serif;
+}
+
+p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Styles */
+.input-group {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.input-group input {
+  width: calc(100% - 2rem);
+  max-width: 400px;
+  padding: 0.75rem;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  margin: 0 auto;
+  display: block;
+}
+
+.input-group input::placeholder {
+  color: #888888;
+  font-style: italic;
+}
+
+.input-group input:focus {
+  border-color: #f4d47c;
+  outline: none;
+  box-shadow: 0 0 4px rgba(244, 212, 124, 0.8);
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+  box-sizing: border-box;
+}
+
+/* Primary Button */
+.button {
+  border: none;
+  background-color: #f4d47c;
+  color: #1e1e1e;
+}
+
+.button:hover {
+  background-color: #d9b563;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #d9b563;
+}
+
+/* Secondary Button */
+.button.secondary {
+  background-color: transparent;
+  color: #f4d47c;
+  border: 1px solid #f4d47c;
+}
+
+.button.secondary:hover {
+  background-color: #f4d47c;
+  color: #1e1e1e;
+}
+
+.button.secondary:active {
+  background-color: #d9b563;
+  color: #1e1e1e;
+}
+
+/* Navigation Button Styles */
+.navigation-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  background-color: #333;
+  border: 1px solid #f4d47c;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+  margin-top: 1rem;
+  margin-inline: 0.3rem;
+}
+
+.navigation-button:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.navigation-button:active {
+  background-color: #555;
+  transform: translateY(0);
+}
+
+/* Badge Styles */
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #e63946;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+/* Example CSS for location cards */
+.location-card {
+  border: 1px solid #444;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Error and Success Messages */
+.error-message {
+  color: #e63946;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  color: #38a169;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design for Mobile */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .input-group input {
+    max-width: 500px;
+  }
+}

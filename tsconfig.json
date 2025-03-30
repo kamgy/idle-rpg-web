@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // Target modern JavaScript
+    "lib": ["DOM", "DOM.Iterable", "ES2015"], // Include DOM and ES2015 APIs
+    "module": "ESNext", // Use ESNext modules
+    "moduleResolution": "Node", // Resolve modules like Node.js
+    "baseUrl": "./src", // Base URL for cleaner imports
+    "paths": {
+      "@components/*": ["components/*"], // Alias for cleaner imports
+      "@types/*": ["types/*"]
+    },
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // For compatibility with ES modules
+    "allowSyntheticDefaultImports": true, // Allow default imports
+    "skipLibCheck": true, // Skip type checks on library files for faster builds
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in imports
+    "jsx": "react-jsx" // Support React JSX
+  },
+  "include": ["src/**/*"], // Include all files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist directories
+}

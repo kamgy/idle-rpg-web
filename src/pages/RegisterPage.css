@@ -1,0 +1,16 @@
+/* RegisterPage.css */
+
+/* Remove default main padding for this page if needed */
+main {
+    padding: 0;
+  }
+  
+  /* Centered container for the registration form with equal horizontal padding */
+  .register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Equal left/right spacing */
+    box-sizing: border-box;
+  }
+  

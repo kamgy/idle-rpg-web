@@ -1,0 +1,81 @@
+.home-page {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center; /* Overall page text is centered */
+}
+
+/* Expedition Info Container styled as a card, with centered content */
+.expedition-info {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #444;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  text-align: center; /* Center all text within the card */
+  transition: transform 0.3s ease;
+}
+
+.expedition-info:hover {
+  transform: scale(1.01);
+}
+
+/* Expedition status and timer styling within the card */
+.expedition-status,
+.expedition-timer {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #f4d47c;
+  text-align: center;
+}
+
+/* Expedition Summary Card Styling remains left-aligned for readability */
+.expedition-summary-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #444;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #f4d47c;
+}
+
+.close-summary {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #f4d47c;
+  cursor: pointer;
+}
+
+.summary-section {
+  margin-top: 1rem;
+}
+
+.summary-section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #f4d47c;
+}
+
+/* Global error message styling */
+.error-message {
+  color: #e63946;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}

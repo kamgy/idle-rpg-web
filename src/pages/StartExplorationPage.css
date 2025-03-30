@@ -1,0 +1,50 @@
+/* Remove separate .back-button styling so that the back button uses the navigation-button style */
+
+/* Remove default main padding (if needed) */
+main {
+  padding: 0;
+}
+
+/* Centered container for the exploration page with equal horizontal padding */
+.start-exploration-page {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.exploration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.exploration-form label {
+  font-size: 1rem;
+}
+
+.exploration-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.error-message,
+.success-message {
+  text-align: center;
+}
+
+.error-message {
+  color: #e63946;
+}
+
+.success-message {
+  color: #38a169;
+}

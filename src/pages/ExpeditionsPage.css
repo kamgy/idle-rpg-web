@@ -1,0 +1,53 @@
+/* ExpeditionsPage.css */
+
+/* Remove fixed max-height and overflow to let the page scroll naturally */
+.expeditions-container {
+  padding: 1rem;
+}
+
+/* Expedition card styling – matching the card-based style */
+.expedition-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #444;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.expedition-card:hover {
+  transform: scale(1.01);
+}
+
+/* Expedition header layout */
+.expedition-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Summary text styling */
+.expedition-summary {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* Expanded expedition details */
+.expedition-details {
+  margin-top: 1rem;
+  text-align: left;
+  border-top: 1px dashed #444;
+  padding-top: 1rem;
+}
+
+/* Back button: full-width, mobile-friendly, centered */
+.back-button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+}

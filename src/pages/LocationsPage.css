@@ -1,0 +1,84 @@
+/* LocationsPage.css */
+
+.locations-page {
+    padding: 1rem;
+    /* Ensure the page fills the viewport (minus any safe area insets) */
+    min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    background-color: #121212;
+  }
+  
+  /* Full-width, mobile-friendly back button */
+  .back-button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+  }
+  
+  /* Container for the list (optional) */
+  .locations-list {
+    /* Additional container styles if needed */
+  }
+  
+  /* Location card styling – similar to expedition cards */
+  .location-card {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .location-card:hover {
+    transform: scale(1.01);
+  }
+  
+  /* Header layout for location card */
+  .location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Location info in header */
+  .location-info h2 {
+    margin: 0;
+  }
+  
+  .location-info p {
+    margin: 0.2rem 0 0;
+  }
+  
+  /* Start button styling; uses existing navigation-button styles */
+  .start-button {
+    margin: 0;
+  }
+  
+  /* Details section for expanded location */
+  .location-details {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  /* Creature info within details */
+  .creature-info {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+  
+  /* Creature loot details */
+  .creature-loot {
+    padding-left: 1rem;
+    margin-top: 0.3rem;
+  }
+  
+  .creature-loot ul {
+    margin: 0.3rem 0;
+    padding-left: 1.5rem;
+  }
+  
